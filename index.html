@@ -13,6 +13,7 @@
          <style>
             table, th, td {
                 border: 1px solid black;
+                width: 100%;
             }
          </style>
 
@@ -50,13 +51,69 @@
             <table class="tabla_contenido">
                 <tr>
                     <td>
-                        <p>---EXPLICACION---</p>
+                        <p>
+                            Lo primero que hay que hacer para crear una animación en css, es elegir el elemento div al que quieres aplicarle la animación y ponerle dos atributos clave: animation-name y animation-duration.
+                        </p>
+                        <p>
+                            En animation-name te puedes inventar cualquier nombre que te guste para la animación y en animation-duration vas a indicar cuánto va a durar la animación. Por defecto, está propiedad está en 0, por tanto, si no se especifica una duración no se va a ejecutar.
+                        </p>
                     </td>
-                    <td rowspan="2"></td>
+                    <td class="codigo">
+                        <span class="code">div { <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;/*aquí puedes poner los atributos que quieras*/ <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: MiPrimeraAnimacion; <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 5s; <br /><br />
+                            }
+                        </span>
+                    </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="IMG/tres_puntos.png" alt="imagen tres puntos en tabla" />
+                        <p>
+                            Ahora, para definir la animación utilizamos la etiqueta @keyframes, seguida del nombre de la animación que hemos definido arriba y dentro de las llaves {} podemos definir el cambio que se va a realizar de dos maneras.
+                        </p>
+                        <p>
+                            La primera forma de hacerlo es poner el atributo from seguido de la propiedad inicial que tiene el elemento, y el atributo to seguido de  la misma propiedad cambiada.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="codigo">
+                        <span class="code">
+                            @keyframes MiPrimeraAnimacion { <br /><br />
+		                    &nbsp;&nbsp;&nbsp;&nbsp;from {background-color: red;} <br /><br />
+  		                    &nbsp;&nbsp;&nbsp;&nbsp;to {background-color: yellow;} <br /><br />
+	                        }
+                        </span>
+                    </td>
+                    <td>
+                        <div class="circulo"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Otra manera de hacerlo, sería en lugar de poner from y to, poner porcentajes por cada trámite que se desea cambiar.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="codigo">
+                        <span class="code">
+                            @keyframes MiPrimeraAnimacion { <br /><br />
+		                    &nbsp;&nbsp;&nbsp;&nbsp;0% {background-color: red;} <br /><br />
+  		                    &nbsp;&nbsp;&nbsp;&nbsp;50% {background-color: yellow;} <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color: green;} <br /><br />
+	                        }
+                        </span>
+                    </td>
+                    <td>
+                        <div class="circulo"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>***podeis poner cuantas propiedades queráis separándolas por punto y coma ;</p>
                     </td>
                 </tr>
             </table>

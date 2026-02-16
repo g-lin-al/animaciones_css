@@ -102,3 +102,15 @@ header p {
     justify-content: center;
     gap: 20px;
 }
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+}
