@@ -6,6 +6,8 @@
 
 body {
     background-color: #1E1E1E;
+    background-image: url("../IMG/degradado_fondo.png");
+    background-repeat: repeat;
 }
 
 nav {
@@ -66,11 +68,11 @@ header p {
     transform: translate(-50%, -50%);
 }
 
-.degradado {
+/*.degradado {
     z-index: 0;
     position: absolute;
     
-}
+}*/
 
 .indice {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
