@@ -2,3 +2,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 0px;
 }
+
+/* ESTO ES PARA PRUEBAS, ELIMINAR SI SE ME OLVIDA - GUILLERMO */
+table, th, td {
+  border: 1px solid black;
+}
+/* ESTO ES PARA PRUEBAS, ELIMINAR SI SE ME OLVIDA - GUILLERMO */
