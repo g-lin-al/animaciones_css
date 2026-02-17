@@ -194,7 +194,7 @@ header p {
 
 }
 
-#primer_circulo{
+#primer_circulo:hover{
     animation-name: MiPrimeraAnimacion;
     animation-duration: 7s;
 }
@@ -206,7 +206,7 @@ header p {
 
 }
 
-#segundo_circulo{
+#segundo_circulo:hover {
     animation-name: MiPrimeraAnimacion1;
     animation-duration: 7s;
 }
@@ -335,6 +335,15 @@ header p {
 footer {
     position: relative;
     top: 100px;
+    background-color: #1E1E1E;
+    height: 120px;
+    width: 100%;
+}
+
+footer p {
+    position: absolute;
+    left: 40px;
+    top: 30%;
 }
 
 .circulob {
