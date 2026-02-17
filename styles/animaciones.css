@@ -354,7 +354,7 @@ footer {
 #i_circulo{animation-timing-function: ease-in; background-color: yellow;}
 #y_circulo{animation-timing-function: ease-out; background-color: rgb(64, 219, 25);}
 #g_circulo {animation-timing-function: ease-in-out;background-color: blue;}
-#z_circulo {animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); background-color: pink;}
+#z_circulo {animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); background-color: rgb(250, 126, 147);}
 
 @keyframes MyAnimation10 {
 
