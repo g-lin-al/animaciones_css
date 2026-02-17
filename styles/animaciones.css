@@ -13,13 +13,20 @@ body {
 }
 
 nav {
-    font-size: 14px;
+    padding: 20px 0px;
+    background-color: #1E1E1E;
+    background-image: url("../IMG/degradado_fondo.png");
+    font-size: 12px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     gap: 52px;
-    position: relative;
-    top: 24px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
 }
 
 a { 
@@ -28,7 +35,7 @@ a {
 
 header {
     position: relative;
-    top: 20px;
+    top: 50px;
     left: 150px;
     width: 1200px;
     height: 450px;
