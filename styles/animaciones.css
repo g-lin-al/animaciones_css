@@ -119,20 +119,23 @@ header p {
     margin-left: 400px;
 }
 
-table {
+.tabla_contenido {
     width: 90%;
     table-layout: fixed;
     border-collapse: separate; /* obligatorio para que funcione border-spacing */
-    border-spacing: 20px;
+    border-spacing: 14px;
+    position: relative;
+    top: -30px;
+
 }
 td, tr {
-    /*border: green 3px solid;*/
+   /* border: green 3px solid;*/
 }
 
 .explicacion {
     vertical-align: top;
     padding-right: 50px;
-    width: 55%;
+    /*width: 55%;*/
 }
 
 .codigo {
@@ -164,6 +167,7 @@ td, tr {
  h2 {
     position: relative;
     left: 92px;
+    font-size: 38px;
  }
 
  #estructura_general {
@@ -194,5 +198,59 @@ td, tr {
 
     from {background-color: red;}
     to {background-color: yellow;}
+
+}
+
+#segundo_circulo{
+    animation-name: MiPrimeraAnimacion1;
+    animation-duration: 7s;
+}
+
+@keyframes MiPrimeraAnimacion1 {
+
+		0% {background-color: red;}
+
+		50% {background-color: yellow;}
+
+		100% {background-color: green;}
+
+	}
+
+.apartado {
+    position: relative;
+    top: 100px;
+}
+
+#tercer_circulo {
+    position: relative;
+    top: 35px;
+    margin-left: 0px;
+
+    animation-name: myAnimation3;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+#cuarto_circulo {
+    position: relative;
+    top: 35px;
+    margin-left: 0px;
+
+    animation-name: myAnimation3;
+    animation-duration: 7s;
+    animation-delay: -2s;
+}
+
+
+#excepcion {
+    width: 75%;
+    
+}
+
+@keyframes myAnimation3 {
+
+    0%  {background-color:red; left:0px;}
+    50% {background-color:yellow; left:400px;}
+    100% {background-color:rgb(0, 255, 0); left:0px;}
 
 }

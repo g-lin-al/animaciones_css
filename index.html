@@ -9,13 +9,6 @@
         <meta name="generator" content="VSC">
         <link rel="stylesheet" href="styles/animaciones.css" type="text/css" />
 
-        <!-- ETIQUETA STYLE PARA PRUEBAS - ELIMINAR -->
-         <!-- <style>
-            table, th, td {
-                border: 1px solid white;
-                width: 100%;
-            }
-         </style> -->
 
     </head>
     <body>
@@ -83,14 +76,14 @@
                         </span>
                     </td>
                     <td class="ejemplo_circulo">
-                        <span class="code" id="primera_expl">Este circulo va a canbiar su color de rojo a amarillo.</span>
+                        <span class="code" id="primera_expl">Este circulo va a cambiar su color de rojo a amarillo.</span>
                         <div class="circulo" id="primer_circulo"></div>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <p class="explicacion">
-                            Otra manera de hacerlo, sería en lugar de poner from y to, poner porcentajes por cada trámite que se desea cambiar.
+                            Otra manera de hacerlo sería poner porcentajes por cada trámite que se desea cambiar.
                         </p>
                     </td>
                 </tr>
@@ -105,7 +98,8 @@
                         </span>
                     </td>
                     <td class="ejemplo_circulo">
-                        <div class="circulo"></div>
+                        <span class="code" id="primera_expl">Este circulo va a canbiar su color de rojo a amarillo y por último a verde.</span>
+                        <div class="circulo" id="segundo_circulo"></div>
                     </td>
                 </tr>
             </table>
@@ -113,44 +107,41 @@
 
         <div class="apartado" id="delay">
             <h2>Delay</h2>
-            <table class="tabla_contenido">
+            <table class="tabla_contenido" align="center">
                 <tr>
                     <td>
-                        <p>
+                        <p class="explicacion">
                             Con esta propiedad se puede definir un retraso antes de empezar la animación. Puede ser tanto positiva, como negativa. Si es negativa, la animación va a empezar como si ya hubiera empezado hace X segundos.
                         </p>
+                        <br />
+                        <div class="codigo" id="excepcion">
+                            <span class="code">
+                                @keyframes myAnimation {<br /><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br /><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:200px;}<br /><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:0px;}<br /><br />
+                                }
+                            </span>
+                            <div class="circulo" id="tercer_circulo"></div>
+                            <br /><br />
+                            <div class="circulo" id="cuarto_circulo"></div>
+                            <br /><br />
+                        </div>
+                    </td>
                     </td>
                     <td class="codigo" colspan="2">
-                    <span class="code">
-                        div  {<br /><br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 2s;<br /><br />
-                        }<br /><br />
-                            <br /><br />
-                        div {<br /><br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: -2s;<br /><br />
-                        }
-                    </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         <span class="code">
-                            @keyframes myAnimation {<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:200px;}<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:0px;}<br /><br />
+                            div  {<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 2s;<br /><br />
                             }<br /><br />
-                            <div class="circulo"></div>
-                            <div class="circulo"></div>
-                            @keyframes myAnimation {<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:200px;}<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:0px;}<br /><br />
-                            }<br /><br />
+                                <br /><br />
+                            div {<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: -2s;<br /><br />
+                            }
                         </span>
                     </td>
                 </tr>
