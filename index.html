@@ -225,16 +225,53 @@
 
     <div class="apartado" id="fill">
         <h2>Fill - mode</h2>
-        <table class="tabla_contenido">
+        <table class="tabla_contenido" align="center">
             <tr>
                 <td>
-                    <p>---EXPLICACION---</p>
+                    <p class="explicacion">
+                        Esta propiedad especifica un estilo para el elemento seleccionado cuando la animación no se está ejecutando: antes de comenzar, después de terminar o ambas opciones al mismo tiempo. Puesto que las animaciones en CSS no afectan al elemento antes del primer fotograma animado, o después del último, esta propiedad permite sobreescribir este comportamiento. 
+                    </p>
+                    <p class="explicacion">
+                        Los valores de esta propiedad son : none (la animación no aplicará ningún estilo al elemento antes o después de su ejecución),  forwards (el elemento retendrá los valores de estilo fijados por el último fotograma), backwards (el elemento retendrá en este caso los valores del primer fotograma), both (la animación seguirá las reglas de forwards y de backwards, extendiendo las propiedades fijadas en ambas direcciones), initial (reestablece la propiedad a sus valores por defecto) y inherit (hereda las propiedades del elemento padre del HTML).
+                    </p>
+                    <br />
+                    <div class="codigo" id="excepcion">
+                        <span class="code">
+                            div { <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 5s; <br /><br />
+                            }
+                            <br /><br /><br />
+
+                            #div1 {animation-fill-mode: none; background-color: red;}<br />
+                            #div2 {animation-fill-mode: forwards; background-color: orange} <br />
+                            #div3 {animation-fill-mode: backwards; background-color: yellow;} <br />
+                            #div4 {animation-fill-mode: both; background-color: rgb(64, 219, 25);} <br />
+                            #div5 {animation-fill-mode: initial; background-color: blue;} <br />
+                            #div6 {animation-fill-mode: inherit; background-color: rgb(250, 126, 147);} <br />
+                            <br /><br /><br />
+
+                            @keyframes myAnimation { <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;from {left: 50px;} <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;to {left: 530px;} <br /><br />
+                            }
+                        </span>
+                    </div>
                 </td>
-                <td rowspan="2"></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="IMG/tres_puntos.png" alt="imagen tres puntos en tabla" />
+                <td class="ejemplo_circulo">
+                    <br />
+                    <div class="circulob" id="_circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="__circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="___circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="____circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="_____circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="______circulo"></div>
+                    <br />
                 </td>
             </tr>
         </table>

@@ -362,3 +362,10 @@ footer {
     to {left: 530px;}
 
 }
+
+#_circulo {animation-fill-mode: none; background-color: red;}
+#__circulo {animation-fill-mode: forwards; background-color: orange}
+#___circulo {animation-fill-mode: backwards; background-color: yellow;}
+#____circulo {animation-fill-mode: both; background-color: rgb(64, 219, 25);}
+#_____circulo {animation-fill-mode: initial; background-color: blue;}
+#______circulo {animation-fill-mode: inherit; background-color: rgb(250, 126, 147);}
