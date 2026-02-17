@@ -9,6 +9,7 @@ body {
     background-image: url("../IMG/degradado_fondo.png");
     background-repeat: repeat;
     width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
@@ -125,7 +126,7 @@ header p {
     border-collapse: separate; /* obligatorio para que funcione border-spacing */
     border-spacing: 14px;
     position: relative;
-    top: -30px;
+    top: -40px;
 
 }
 td, tr {
@@ -140,7 +141,7 @@ td, tr {
 
 .codigo {
     padding: 60px;
-    padding-left: 120px;
+    padding-left: 110px;
     width: 45%;
     
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -170,24 +171,23 @@ td, tr {
     font-size: 38px;
  }
 
- #estructura_general {
+#estructura_general {
+    position: relative;
+}
+
+#delay {
     position: relative;
     top: 100px;
- }
+}
 
- #delay {
-    position: relative;
-    top: 100px;
- }
-
- #primera_expl {
+#primera_expl {
     padding: 20px;
     float: left;
     position: relative;
     left: 70px;
     width: 180px;
 
- }
+}
 
 #primer_circulo{
     animation-name: MiPrimeraAnimacion;
