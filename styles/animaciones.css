@@ -8,6 +8,7 @@ body {
     background-color: #1E1E1E;
     background-image: url("../IMG/degradado_fondo.png");
     background-repeat: repeat;
+    width: 100%;
 }
 
 nav {
@@ -111,13 +112,18 @@ header p {
 .circulo {
     width: 100px;
     height: 100px;
-    border-radius: 100%;
-    background-color: white;
+    border-radius: 50%;   /* círculo perfecto */
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    margin-left: 400px;
 }
 
 table {
     width: 90%;
     table-layout: fixed;
+    border-collapse: separate; /* obligatorio para que funcione border-spacing */
+    border-spacing: 20px;
 }
 td, tr {
     /*border: green 3px solid;*/
@@ -142,18 +148,51 @@ td, tr {
 }
 
 .ejemplo_circulo {
-    border: 3px solid red;
+    
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solig rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
 }
+
  p {
     text-align: justify;
  }
 
  h2 {
     position: relative;
-    left: 72px;
+    left: 92px;
  }
 
  #estructura_general {
     position: relative;
     top: 100px;
  }
+
+ #delay {
+    position: relative;
+    top: 100px;
+ }
+
+ #primera_expl {
+    padding: 20px;
+    float: left;
+    position: relative;
+    left: 70px;
+    width: 180px;
+
+ }
+
+#primer_circulo{
+    animation-name: MiPrimeraAnimacion;
+    animation-duration: 7s;
+}
+
+ @keyframes MiPrimeraAnimacion {
+
+    from {background-color: red;}
+    to {background-color: yellow;}
+
+}
