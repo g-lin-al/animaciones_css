@@ -224,16 +224,35 @@
 
         <div class="apartado" id="iteration">
             <h2>Iteration - count</h2>
-            <table class="tabla_contenido">
+            <table class="tabla_contenido" align="center">
                 <tr>
                     <td>
-                        <p>---EXPLICACION---</p>
+                        <p class="explicacion">
+                            Esta propiedad especifica el número de veces que se va a repetir la animación. Puede tomar como valor un número específico de veces o infinite (infinito número de veces).
+                        </p>
+                        <br />
+                        <div class="codigo" id="excepcion">
+                            <span class="code">
+                                div { <br /><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation; <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s; <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: infinite; <br /><br />
+                                }
+                            </span>
+                            <br /> <br /><br />
+                            <span class="code" >
+                                @keyframes myAnimation { <br /><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:100px; top:100px;} <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;25%  {background-color:yellow; left:480px; top:100px;} <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:blue; left:480px; top:350px;} <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;75%  {background-color:green; left:100px; top:350px;} <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:red; left:100px; top:100px;} <br /><br />
+                                }
+                            </span>
+                        </div>
                     </td>
-                    <td rowspan="2"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="IMG/tres_puntos.png" alt="imagen tres puntos en tabla" />
+                    <td class="ejemplo_circulo">
+                        <div id="e_circulo"></div>
                     </td>
                 </tr>
             </table>
