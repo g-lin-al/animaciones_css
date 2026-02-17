@@ -116,17 +116,23 @@ header p {
 }
 
 table {
-    width: 100%;
+    width: 90%;
+    table-layout: fixed;
+}
+td, tr {
+    /*border: green 3px solid;*/
 }
 
 .explicacion {
     vertical-align: top;
-    padding: 20px 50px;
+    padding-right: 50px;
+    width: 55%;
 }
 
 .codigo {
-    padding: 100px;
-    width: 100%;
+    padding: 60px;
+    padding-left: 120px;
+    width: 45%;
     
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(20px);
@@ -134,3 +140,20 @@ table {
     border: 1px solig rgba(255, 255, 255, 0.18);
     border-radius: 32px;
 }
+
+.ejemplo_circulo {
+    border: 3px solid red;
+}
+ p {
+    text-align: justify;
+ }
+
+ h2 {
+    position: relative;
+    left: 72px;
+ }
+
+ #estructura_general {
+    position: relative;
+    top: 100px;
+ }
