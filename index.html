@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Animaciones en CSS</title>
-    <meta name="author" content="Guillermo Líndez and Anastasia Hristea" />
-    <meta name="description" content="Cómo se pueden hacer animaciones en CSS sin usar JS" />
+    <meta name="author" content="Guillermo L&iacute;ndez and Anastasia Hristea" />
+    <meta name="description" content="C&oacute;mo se pueden hacer animaciones en CSS sin usar JS" />
     <meta name="generator" content="VSC">
     <link rel="stylesheet" href="styles/animaciones.css" type="text/css" />
 
@@ -14,7 +14,7 @@
 
 <body>
     <nav>
-        <!-- Recordar quitarles a estos div que sean etiquetas de bloque, y borrar este comentario cuando esté hecho -->
+        <!-- Recordar quitarles a estos div que sean etiquetas de bloque, y borrar este comentario cuando est&eacute; hecho -->
         <a href="#inicio">INICIO</a>
         <a href="#estructura_general">ESTRUCTURA GENERAL</a>
         <a href="#delay">DELAY</a>
@@ -25,8 +25,8 @@
     </nav>
     <header id="inicio">
         <h1>Animaciones en CSS</h1>
-        <p>En esta presentación en formato web vamos a tratar de explicar las etiquetas y funcionalidades que podemos
-            crear con CSS para animar objetos sin necesidad de Javascript. Cada apartado de la web estará enfocado en
+        <p>En esta presentaci&oacute;n en formato web vamos a tratar de explicar las etiquetas y funcionalidades que podemos
+            crear con CSS para animar objetos sin necesidad de Javascript. Cada apartado de la web estar&aacute; enfocado en
             una de las etiquetas, junto con un ejemplo.</p>
     </header>
     <!-- "botones"-->
@@ -40,7 +40,7 @@
         <div class="indice"><a href="#timing">TIMING - FUNCTION</a></div>
     </div>
 
-    <!-- Comienzo de los apartados - Borrar este comentario cuando esté todo hecho -->
+    <!-- Comienzo de los apartados - Borrar este comentario cuando est&eacute; todo hecho -->
 
     <div class="apartado" id="estructura_general">
         <h2>Estructura general</h2>
@@ -48,18 +48,18 @@
             <tr>
                 <td class="explicacion">
                     <p>
-                        Lo primero que hay que hacer para crear una animación en css, es elegir el elemento div al que
-                        quieres aplicarle la animación y ponerle dos atributos clave: animation-name y
+                        Lo primero que hay que hacer para crear una animaci&oacute;n en css, es elegir el elemento div al que
+                        quieres aplicarle la animaci&oacute;n y ponerle dos atributos clave: animation-name y
                         animation-duration.
                     </p>
                     <p>
-                        En animation-name te puedes inventar cualquier nombre que te guste para la animación y en
-                        animation-duration vas a indicar cuánto va a durar la animación. Por defecto, está propiedad
-                        está en 0, por tanto, si no se especifica una duración no se va a ejecutar.
+                        En animation-name te puedes inventar cualquier nombre que te guste para la animaci&oacute;n y en
+                        animation-duration vas a indicar cu&aacute;nto va a durar la animaci&oacute;n. Por defecto, est&aacute; propiedad
+                        est&aacute; en 0, por tanto, si no se especifica una duraci&oacute;n no se va a ejecutar.
                     </p>
                     <p>
-                        Ahora, para definir la animación utilizamos la etiqueta @keyframes, seguida del nombre de la
-                        animación que hemos definido arriba y dentro de las llaves {} podemos definir el cambio que se
+                        Ahora, para definir la animaci&oacute;n utilizamos la etiqueta @keyframes, seguida del nombre de la
+                        animaci&oacute;n que hemos definido arriba y dentro de las llaves {} podemos definir el cambio que se
                         va a realizar de dos maneras.
                     </p>
                     <p>
@@ -69,7 +69,7 @@
                 </td>
                 <td class="codigo">
                     <span class="code">div { <br /><br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;/* aquí puedes poner los atributos que quieras */ <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;/* aqu&iacute; puedes poner los atributos que quieras */ <br /><br />
                         &nbsp;&nbsp;&nbsp;&nbsp;animation-name: MiPrimeraAnimacion; <br /><br />
                         &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 7s; <br /><br />
                         }
@@ -93,7 +93,7 @@
             <tr>
                 <td colspan="2">
                     <p class="explicacion">
-                        Otra manera de hacerlo sería poner porcentajes por cada trámite que se desea cambiar.
+                        Otra manera de hacerlo ser&iacute;a poner porcentajes por cada tr&aacute;mite que se desea cambiar.
                     </p>
                 </td>
             </tr>
@@ -109,7 +109,7 @@
                 </td>
                 <td class="ejemplo_circulo">
                     <span class="code" id="primera_expl">Este circulo va a canbiar su color de rojo a amarillo y por
-                        último a verde.</span>
+                        &oacute;ltimo a verde.</span>
                     <div class="circulo" id="segundo_circulo"></div>
                 </td>
             </tr>
@@ -122,8 +122,8 @@
             <tr>
                 <td>
                     <p class="explicacion">
-                        Con esta propiedad se puede definir un retraso antes de empezar la animación. Puede ser tanto
-                        positiva, como negativa. Si es negativa, la animación va a empezar como si ya hubiera empezado
+                        Con esta propiedad se puede definir un retraso antes de empezar la animaci&oacute;n. Puede ser tanto
+                        positiva, como negativa. Si es negativa, la animaci&oacute;n va a empezar como si ya hubiera empezado
                         hace X segundos.
                     </p>
                     <br />
@@ -167,11 +167,11 @@
             <tr>
                 <td>
                     <p class="explicacion">
-                        Esta propiedad permite cambiar el orden en el que se va a ejecutar la animación. Puede ser
+                        Esta propiedad permite cambiar el orden en el que se va a ejecutar la animaci&oacute;n. Puede ser
                         normal, al revers o alternada. Para indicarlo usamos las siguientes propiedades: normal (sin
-                        cambios), reverse (al revers), alternate (primero normal y después al revers) y
-                        alternate-reverse (primero al revers y después normal). Además, para ejecutar el alternate y
-                        alternate-reverse, hay que añadir la propiedad animation-iteration-count e indicar que se va a
+                        cambios), reverse (al revers), alternate (primero normal y despu&eacute;s al revers) y
+                        alternate-reverse (primero al revers y despu&eacute;s normal). Adem&aacute;s, para ejecutar el alternate y
+                        alternate-reverse, hay que a&ntilde;adir la propiedad animation-iteration-count e indicar que se va a
                         repetir 2 veces.
                     </p>
                     <br />
@@ -229,10 +229,10 @@
             <tr>
                 <td>
                     <p class="explicacion">
-                        Esta propiedad especifica un estilo para el elemento seleccionado cuando la animación no se está ejecutando: antes de comenzar, después de terminar o ambas opciones al mismo tiempo. Puesto que las animaciones en CSS no afectan al elemento antes del primer fotograma animado, o después del último, esta propiedad permite sobreescribir este comportamiento. 
+                        Esta propiedad especifica un estilo para el elemento seleccionado cuando la animaci&oacute;n no se est&aacute; ejecutando: antes de comenzar, despu&eacute;s de terminar o ambas opciones al mismo tiempo. Puesto que las animaciones en CSS no afectan al elemento antes del primer fotograma animado, o despu&eacute;s del &oacute;ltimo, esta propiedad permite sobreescribir este comportamiento. 
                     </p>
                     <p class="explicacion">
-                        Los valores de esta propiedad son : none (la animación no aplicará ningún estilo al elemento antes o después de su ejecución),  forwards (el elemento retendrá los valores de estilo fijados por el último fotograma), backwards (el elemento retendrá en este caso los valores del primer fotograma), both (la animación seguirá las reglas de forwards y de backwards, extendiendo las propiedades fijadas en ambas direcciones), initial (reestablece la propiedad a sus valores por defecto) y inherit (hereda las propiedades del elemento padre del HTML).
+                        Los valores de esta propiedad son : none (la animaci&oacute;n no aplicar&aacute; ning&oacute;n estilo al elemento antes o despu&eacute;s de su ejecuci&oacute;n),  forwards (el elemento retendr&aacute; los valores de estilo fijados por el &oacute;ltimo fotograma), backwards (el elemento retendr&aacute; en este caso los valores del primer fotograma), both (la animaci&oacute;n seguir&aacute; las reglas de forwards y de backwards, extendiendo las propiedades fijadas en ambas direcciones), initial (reestablece la propiedad a sus valores por defecto) y inherit (hereda las propiedades del elemento padre del HTML).
                     </p>
                     <br />
                     <div class="codigo" id="excepcion">
@@ -283,8 +283,8 @@
             <tr>
                 <td>
                     <p class="explicacion">
-                        Esta propiedad especifica el número de veces que se va a repetir la animación. Puede tomar como
-                        valor un número específico de veces o infinite (infinito número de veces).
+                        Esta propiedad especifica el n&oacute;mero de veces que se va a repetir la animaci&oacute;n. Puede tomar como
+                        valor un n&oacute;mero espec&iacute;fico de veces o infinite (infinito n&oacute;mero de veces).
                     </p>
                     <br />
                     <div class="codigo" id="excepcion">
@@ -320,11 +320,11 @@
             <tr>
                 <td>
                     <p class="explicacion">
-                        Otra función es animation-timing-function que especifica la velocidad de la animación en varios
+                        Otra funci&oacute;n es animation-timing-function que especifica la velocidad de la animaci&oacute;n en varios
                         tramites, es decir, en una especie de curva de velocidad. Para definir los tramites tenemos
-                        varias opciones: ease (comienzo y final más lento que el recorrido), linear (la misma velocidad
-                        en todo el recorrido), ease-in (comienzo más lento), ease-out (final más lento), ease-in-out
-                        (comienzo y final más lentos) y cubic-bezier(n,n,n,n) (estableces los valores que quieres).
+                        varias opciones: ease (comienzo y final m&aacute;s lento que el recorrido), linear (la misma velocidad
+                        en todo el recorrido), ease-in (comienzo m&aacute;s lento), ease-out (final m&aacute;s lento), ease-in-out
+                        (comienzo y final m&aacute;s lentos) y cubic-bezier(n,n,n,n) (estableces los valores que quieres).
                     </p>
                     <br />
                     <div class="codigo" id="excepcion">
@@ -372,8 +372,8 @@
     <!-- Final de los apartados -->
 
     <footer>
-        <p id="copyright">&copy; Creado por Guillermo Líndez y Anastasia Hristea para Lenguaje de Marcas, curso DAW - Arcipreste de
-            Hita en curso 25/26. No autorizada su reproducción o modificación sin consentimiento expreso.</p>
+        <p id="copyright">&copy; Creado por Guillermo L&iacute;ndez y Anastasia Hristea para Lenguaje de Marcas, curso DAW - Arcipreste de
+            Hita en curso 25/26. No autorizada su reproducci&iacute;n o modificaci&oacute;n sin consentimiento expreso.</p>
     </footer>
 </body>
 
