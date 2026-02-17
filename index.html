@@ -10,12 +10,12 @@
         <link rel="stylesheet" href="styles/animaciones.css" type="text/css" />
 
         <!-- ETIQUETA STYLE PARA PRUEBAS - ELIMINAR -->
-         <!--<style>
+         <!-- <style>
             table, th, td {
-                border: 1px solid black;
+                border: 1px solid white;
                 width: 100%;
             }
-         </style>-->
+         </style> -->
 
     </head>
     <body>
@@ -66,7 +66,7 @@
                     </td>
                     <td class="codigo">
                         <span class="code">div { <br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;/*aquí puedes poner los atributos que quieras*/ <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;/* aquí puedes poner los atributos que quieras */ <br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-name: MiPrimeraAnimacion; <br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 5s; <br /><br />
                             }
@@ -87,7 +87,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td colspan="2">
                         <p class="explicacion">
                             Otra manera de hacerlo, sería en lugar de poner from y to, poner porcentajes por cada trámite que se desea cambiar.
                         </p>
@@ -115,13 +115,42 @@
             <table class="tabla_contenido">
                 <tr>
                     <td>
-                        <p>---EXPLICACION---</p>
+                        <p>
+                            Con esta propiedad se puede definir un retraso antes de empezar la animación. Puede ser tanto positiva, como negativa. Si es negativa, la animación va a empezar como si ya hubiera empezado hace X segundos.
+                        </p>
                     </td>
-                    <td rowspan="2"></td>
+                    <td class="codigo" colspan="2">
+                    <span class="code">
+                        div  {<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 2s;<br /><br />
+                        }<br /><br />
+                            <br /><br />
+                        div {<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: -2s;<br /><br />
+                        }
+                    </span>
+                    </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="IMG/tres_puntos.png" alt="imagen tres puntos en tabla" />
+                        <span class="code">
+                            @keyframes myAnimation {<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:200px;}<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:0px;}<br /><br />
+                            }<br /><br />
+                            <div class="circulo"></div>
+                            <div class="circulo"></div>
+                            @keyframes myAnimation {<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:200px;}<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:0px;}<br /><br />
+                            }<br /><br />
+                        </span>
                     </td>
                 </tr>
             </table>
@@ -132,13 +161,48 @@
             <table class="tabla_contenido">
                 <tr>
                     <td>
-                        <p>---EXPLICACION---</p>
+                        <p>
+                            Esta propiedad permite cambiar el orden en el que se va a ejecutar la animación. Puede ser normal, al revers o alternada. Para indicarlo usamos las siguientes propiedades: normal (sin cambios), reverse (al revers), alternate (primero normal y después al revers) y alternate-reverse (primero al revers y después normal).
+                        </p>
                     </td>
-                    <td rowspan="2"></td>
+                    <td rowspan="2">
+                        <span class="code">
+                            div {<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation2;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: normal;<br /><br />
+                            }<br /><br />
+                            div {<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation3;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: reverse;<br /><br />
+                            }<br /><br />
+                            div {<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation4;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: alternate;<br /><br />
+                            }<br /><br />
+                            div {<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation5;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: alternate-reverse;<br /><br />
+                            }
+                        </span>
+                    </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="IMG/tres_puntos.png" alt="imagen tres puntos en tabla" />
+                        <span class="code">
+                            @keyframes myAnimation {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:200px;}<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:0px;}<br />
+                            }
+                        </span>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
                     </td>
                 </tr>
             </table>
@@ -198,7 +262,7 @@
         <!-- Final de los apartados -->
 
         <footer>
-            <p>Creado por Guillermo Líndez y Anastasia Hristea para Lenguaje de Marcas, curso DAW - Arcipreste de Hita en curso 25/26. No autorizada su reproducción o modificación sin consentimiento expreso.</p>
+            <p>&copy; Creado por Guillermo Líndez y Anastasia Hristea para Lenguaje de Marcas, curso DAW - Arcipreste de Hita en curso 25/26. No autorizada su reproducción o modificación sin consentimiento expreso.</p>
         </footer>
     </body>
 </html>
