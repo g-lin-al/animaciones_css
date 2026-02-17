@@ -1,284 +1,343 @@
 <!DOCTYPE html>
 <html lang="spanish">
-    <head>
-        <meta charset="UTF-8">
-        <title>Animaciones en CSS</title>
-        <meta name="author" content="Guillermo Líndez and Anastasia Hristea" />
-        <meta name="description"
-            content="Cómo se pueden hacer animaciones en CSS sin usar JS" />
-        <meta name="generator" content="VSC">
-        <link rel="stylesheet" href="styles/animaciones.css" type="text/css" />
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animaciones en CSS</title>
+    <meta name="author" content="Guillermo Líndez and Anastasia Hristea" />
+    <meta name="description" content="Cómo se pueden hacer animaciones en CSS sin usar JS" />
+    <meta name="generator" content="VSC">
+    <link rel="stylesheet" href="styles/animaciones.css" type="text/css" />
 
 
-    </head>
-    <body>
-        <nav>
-            <!-- Recordar quitarles a estos div que sean etiquetas de bloque, y borrar este comentario cuando esté hecho -->
-            <a href="#inicio">INICIO</a>
-            <a href="#estructura_general">ESTRUCTURA GENERAL</a>
-            <a href="#delay">DELAY</a>
-            <a href="#direction">DIRECTION</a>
-            <a href="#fill">FILL - MODE</a>
-            <a href="#iteration">ITERATION - COUNT</a>
-            <a href="#timing">TIMING - FUNCTION</a>
-        </nav>
-        <header>
-            <h1>Animaciones en CSS</h1>
-            <p>En esta presentación en formato web vamos a tratar de explicar las etiquetas y funcionalidades que podemos crear con CSS para animar objetos sin necesidad de Javascript. Cada apartado de la web estará enfocado en una de las etiquetas, junto con un ejemplo.</p>
-        </header>
-        <!-- "botones"-->
-        <div id = "botones"> 
-            <div class="indice"><a href="#inicio">INICIO</a></div>
-            <div class="indice"><a href="#estructura_general">ESTRUCTURA GENERAL</a></div>
-            <div class="indice"><a href="#delay">DELAY</a></div>
-            <div class="indice"><a href="#direction">DIRECTION</a></div>
-            <div class="indice"><a href="#fill">FILL - MODE</a></div>
-            <div class="indice"><a href="#iteration">ITERATION - COUNT</a></div>
-            <div class="indice"><a href="#timing">TIMING - FUNCTION</a></div>
-        </div>
+</head>
 
-        <!-- Comienzo de los apartados - Borrar este comentario cuando esté todo hecho -->
+<body>
+    <nav>
+        <!-- Recordar quitarles a estos div que sean etiquetas de bloque, y borrar este comentario cuando esté hecho -->
+        <a href="#inicio">INICIO</a>
+        <a href="#estructura_general">ESTRUCTURA GENERAL</a>
+        <a href="#delay">DELAY</a>
+        <a href="#direction">DIRECTION</a>
+        <a href="#fill">FILL - MODE</a>
+        <a href="#iteration">ITERATION - COUNT</a>
+        <a href="#timing">TIMING - FUNCTION</a>
+    </nav>
+    <header>
+        <h1>Animaciones en CSS</h1>
+        <p>En esta presentación en formato web vamos a tratar de explicar las etiquetas y funcionalidades que podemos
+            crear con CSS para animar objetos sin necesidad de Javascript. Cada apartado de la web estará enfocado en
+            una de las etiquetas, junto con un ejemplo.</p>
+    </header>
+    <!-- "botones"-->
+    <div id="botones">
+        <div class="indice"><a href="#inicio">INICIO</a></div>
+        <div class="indice"><a href="#estructura_general">ESTRUCTURA GENERAL</a></div>
+        <div class="indice"><a href="#delay">DELAY</a></div>
+        <div class="indice"><a href="#direction">DIRECTION</a></div>
+        <div class="indice"><a href="#fill">FILL - MODE</a></div>
+        <div class="indice"><a href="#iteration">ITERATION - COUNT</a></div>
+        <div class="indice"><a href="#timing">TIMING - FUNCTION</a></div>
+    </div>
 
-        <div class="apartado" id="estructura_general">
-            <h2>Estructura general</h2>
-            <table class="tabla_contenido" align="center">
-                <tr>
-                    <td class="explicacion">
-                        <p>
-                            Lo primero que hay que hacer para crear una animación en css, es elegir el elemento div al que quieres aplicarle la animación y ponerle dos atributos clave: animation-name y animation-duration.
-                        </p>
-                        <p>
-                            En animation-name te puedes inventar cualquier nombre que te guste para la animación y en animation-duration vas a indicar cuánto va a durar la animación. Por defecto, está propiedad está en 0, por tanto, si no se especifica una duración no se va a ejecutar.
-                        </p>
-                        <p>
-                            Ahora, para definir la animación utilizamos la etiqueta @keyframes, seguida del nombre de la animación que hemos definido arriba y dentro de las llaves {} podemos definir el cambio que se va a realizar de dos maneras.
-                        </p>
-                        <p>
-                            La primera forma de hacerlo es poner el atributo from seguido de la propiedad inicial que tiene el elemento, y el atributo to seguido de  la misma propiedad cambiada.
-                        </p>
-                    </td>
-                    <td class="codigo">
-                        <span class="code">div { <br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;/* aquí puedes poner los atributos que quieras */ <br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: MiPrimeraAnimacion; <br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 7s; <br /><br />
+    <!-- Comienzo de los apartados - Borrar este comentario cuando esté todo hecho -->
+
+    <div class="apartado" id="estructura_general">
+        <h2>Estructura general</h2>
+        <table class="tabla_contenido" align="center">
+            <tr>
+                <td class="explicacion">
+                    <p>
+                        Lo primero que hay que hacer para crear una animación en css, es elegir el elemento div al que
+                        quieres aplicarle la animación y ponerle dos atributos clave: animation-name y
+                        animation-duration.
+                    </p>
+                    <p>
+                        En animation-name te puedes inventar cualquier nombre que te guste para la animación y en
+                        animation-duration vas a indicar cuánto va a durar la animación. Por defecto, está propiedad
+                        está en 0, por tanto, si no se especifica una duración no se va a ejecutar.
+                    </p>
+                    <p>
+                        Ahora, para definir la animación utilizamos la etiqueta @keyframes, seguida del nombre de la
+                        animación que hemos definido arriba y dentro de las llaves {} podemos definir el cambio que se
+                        va a realizar de dos maneras.
+                    </p>
+                    <p>
+                        La primera forma de hacerlo es poner el atributo from seguido de la propiedad inicial que tiene
+                        el elemento, y el atributo to seguido de la misma propiedad cambiada.
+                    </p>
+                </td>
+                <td class="codigo">
+                    <span class="code">div { <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;/* aquí puedes poner los atributos que quieras */ <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: MiPrimeraAnimacion; <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 7s; <br /><br />
+                        }
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="codigo">
+                    <span class="code">
+                        @keyframes MiPrimeraAnimacion { <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;from {background-color: red;} <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;to {background-color: yellow;} <br /><br />
+                        }
+                    </span>
+                </td>
+                <td class="ejemplo_circulo">
+                    <span class="code" id="primera_expl">Este circulo va a cambiar su color de rojo a amarillo.</span>
+                    <div class="circulo" id="primer_circulo"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="explicacion">
+                        Otra manera de hacerlo sería poner porcentajes por cada trámite que se desea cambiar.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="codigo">
+                    <span class="code">
+                        @keyframes MiPrimeraAnimacion { <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;0% {background-color: red;} <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;50% {background-color: yellow;} <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color: green;} <br /><br />
+                        }
+                    </span>
+                </td>
+                <td class="ejemplo_circulo">
+                    <span class="code" id="primera_expl">Este circulo va a canbiar su color de rojo a amarillo y por
+                        último a verde.</span>
+                    <div class="circulo" id="segundo_circulo"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="apartado" id="delay">
+        <h2>Delay</h2>
+        <table class="tabla_contenido" align="center">
+            <tr>
+                <td>
+                    <p class="explicacion">
+                        Con esta propiedad se puede definir un retraso antes de empezar la animación. Puede ser tanto
+                        positiva, como negativa. Si es negativa, la animación va a empezar como si ya hubiera empezado
+                        hace X segundos.
+                    </p>
+                    <br />
+                    <div class="codigo" id="excepcion">
+                        <span class="code">
+                            @keyframes myAnimation {<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;0% {background-color:red; left:0px;}<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;50% {background-color:yellow; left:400px;}<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:0px;}<br /><br />
                             }
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="codigo">
-                        <span class="code">
-                            @keyframes MiPrimeraAnimacion { <br /><br />
-		                    &nbsp;&nbsp;&nbsp;&nbsp;from {background-color: red;} <br /><br />
-  		                    &nbsp;&nbsp;&nbsp;&nbsp;to {background-color: yellow;} <br /><br />
-	                        }
-                        </span>
-                    </td>
-                    <td class="ejemplo_circulo">
-                        <span class="code" id="primera_expl">Este circulo va a cambiar su color de rojo a amarillo.</span>
-                        <div class="circulo" id="primer_circulo"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <p class="explicacion">
-                            Otra manera de hacerlo sería poner porcentajes por cada trámite que se desea cambiar.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="codigo">
-                        <span class="code">
-                            @keyframes MiPrimeraAnimacion { <br /><br />
-		                    &nbsp;&nbsp;&nbsp;&nbsp;0% {background-color: red;} <br /><br />
-  		                    &nbsp;&nbsp;&nbsp;&nbsp;50% {background-color: yellow;} <br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color: green;} <br /><br />
-	                        }
-                        </span>
-                    </td>
-                    <td class="ejemplo_circulo">
-                        <span class="code" id="primera_expl">Este circulo va a canbiar su color de rojo a amarillo y por último a verde.</span>
-                        <div class="circulo" id="segundo_circulo"></div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+                        <div class="circulo" id="tercer_circulo"></div>
+                        <br /><br />
+                        <div class="circulo" id="cuarto_circulo"></div>
+                        <br /><br />
+                    </div>
+                </td>
+                </td>
+                <td class="codigo" colspan="2">
+                    <span class="code">
+                        div {<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 7s;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 2s;<br /><br />
+                        }<br /><br />
+                        <br /><br />
+                        div {<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 7s;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: -2s;<br /><br />
+                        }
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-        <div class="apartado" id="delay">
-            <h2>Delay</h2>
-            <table class="tabla_contenido" align="center">
-                <tr>
-                    <td>
-                        <p class="explicacion">
-                            Con esta propiedad se puede definir un retraso antes de empezar la animación. Puede ser tanto positiva, como negativa. Si es negativa, la animación va a empezar como si ya hubiera empezado hace X segundos.
-                        </p>
-                        <br />
-                        <div class="codigo" id="excepcion">
-                            <span class="code">
-                                @keyframes myAnimation {<br /><br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br /><br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:400px;}<br /><br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:0px;}<br /><br />
-                                }
-                            </span>
-                            <div class="circulo" id="tercer_circulo"></div>
-                            <br /><br />
-                            <div class="circulo" id="cuarto_circulo"></div>
-                            <br /><br />
-                        </div>
-                    </td>
-                    </td>
-                    <td class="codigo" colspan="2">
+    <div class="apartado" id="direction">
+        <h2>Direction</h2>
+        <table class="tabla_contenido" align="center">
+            <tr>
+                <td>
+                    <p class="explicacion">
+                        Esta propiedad permite cambiar el orden en el que se va a ejecutar la animación. Puede ser
+                        normal, al revers o alternada. Para indicarlo usamos las siguientes propiedades: normal (sin
+                        cambios), reverse (al revers), alternate (primero normal y después al revers) y
+                        alternate-reverse (primero al revers y después normal). Además, para ejecutar el alternate y
+                        alternate-reverse, hay que añadir la propiedad animation-iteration-count e indicar que se va a
+                        repetir 2 veces.
+                    </p>
+                    <br />
+                    <div class="codigo" id="excepcion">
                         <span class="code">
-                            div  {<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 7s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 2s;<br /><br />
-                            }<br /><br />
-                                <br /><br />
-                            div {<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 7s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: -2s;<br /><br />
+                            @keyframes myAnimation {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;0% {background-color:red; left:0px;}<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;50% {background-color:yellow; left:200px;}<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:400px;}<br />
                             }
                         </span>
-                    </td>
-                </tr>
-            </table>
-        </div>
+                        <div class="circulo" id="a_circulo"></div>
+                        <br /><br />
+                        <div class="circulo" id="b_circulo"></div>
+                        <br /><br />
+                        <div class="circulo" id="c_circulo"></div>
+                        <br /><br />
+                        <div class="circulo" id="d_circulo"></div>
+                        <br /><br /><br />
+                    </div>
+                </td>
+                <td class="codigo" colspan="2">
+                    <span class="code">
+                        div {<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation2;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: normal;<br /><br />
+                        }<br /><br />
+                        div {<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation3;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: reverse;<br /><br />
+                        }<br /><br />
+                        div {<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation4;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: 2;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: alternate;<br /><br />
+                        }<br /><br />
+                        div {<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation5;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: 2;<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: alternate-reverse;<br /><br />
+                        }
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-        <div class="apartado" id="direction">
-            <h2>Direction</h2>
-            <table class="tabla_contenido" align="center">
-                <tr>
-                    <td>
-                        <p class="explicacion">
-                            Esta propiedad permite cambiar el orden en el que se va a ejecutar la animación. Puede ser normal, al revers o alternada. Para indicarlo usamos las siguientes propiedades: normal (sin cambios), reverse (al revers), alternate (primero normal y después al revers) y alternate-reverse (primero al revers y después normal). Además, para ejecutar el alternate y alternate-reverse, hay que añadir la propiedad animation-iteration-count e indicar que se va a repetir 2 veces. 
-                        </p>
-                        <br />
-                        <div class="codigo" id="excepcion">
-                            <span class="code">
-                                @keyframes myAnimation {<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:200px;}<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:400px;}<br />
-                                }
-                            </span>
-                            <div class="circulo" id="a_circulo"></div>
-                            <br /><br />
-                            <div class="circulo" id="b_circulo"></div>
-                            <br /><br />
-                            <div class="circulo" id="c_circulo"></div>
-                            <br /><br />
-                            <div class="circulo" id="d_circulo"></div>
+    <div class="apartado" id="fill">
+        <h2>Fill - mode</h2>
+        <table class="tabla_contenido">
+            <tr>
+                <td>
+                    <p>---EXPLICACION---</p>
+                </td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="IMG/tres_puntos.png" alt="imagen tres puntos en tabla" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="apartado" id="iteration">
+        <h2>Iteration - count</h2>
+        <table class="tabla_contenido" align="center">
+            <tr>
+                <td>
+                    <p class="explicacion">
+                        Esta propiedad especifica el número de veces que se va a repetir la animación. Puede tomar como
+                        valor un número específico de veces o infinite (infinito número de veces).
+                    </p>
+                    <br />
+                    <div class="codigo" id="excepcion">
+                        <span class="code">
+                            div { <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation; <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s; <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: infinite; <br /><br />
+                            }
+                        </span>
+                        <br /> <br /><br />
+                        <span class="code">
+                            @keyframes myAnimation { <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;0% {background-color:red; left:100px; top:100px;} <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;25% {background-color:yellow; left:480px; top:100px;} <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;50% {background-color:blue; left:480px; top:350px;} <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;75% {background-color:green; left:100px; top:350px;} <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:red; left:100px; top:100px;} <br /><br />
+                            }
+                        </span>
+                    </div>
+                </td>
+                <td class="ejemplo_circulo">
+                    <div id="e_circulo"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="apartado" id="timing">
+        <h2>Timing - function</h2>
+        <table class="tabla_contenido" align="center">
+            <tr>
+                <td>
+                    <p class="explicacion">
+                        Otra función es animation-timing-function que especifica la velocidad de la animación en varios
+                        tramites, es decir, en una especie de curva de velocidad. Para definir los tramites tenemos
+                        varias opciones: ease (comienzo y final más lento que el recorrido), linear (la misma velocidad
+                        en todo el recorrido), ease-in (comienzo más lento), ease-out (final más lento), ease-in-out
+                        (comienzo y final más lentos) y cubic-bezier(n,n,n,n) (estableces los valores que quieres).
+                    </p>
+                    <br />
+                    <div class="codigo" id="excepcion">
+                        <span class="code">
+                            div { <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 5s; <br /><br />
+                            }
                             <br /><br /><br />
-                        </div>
-                    </td>
-                    <td class="codigo" colspan="2">
-                        <span class="code">
-                            div {<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation2;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: normal;<br /><br />
-                            }<br /><br />
-                            div {<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation3;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: reverse;<br /><br />
-                            }<br /><br />
-                            div {<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation4;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: 2;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: alternate;<br /><br />
-                            }<br /><br />
-                            div {<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation5;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: 2;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: alternate-reverse;<br /><br />
+
+                            #div1 {animation-timing-function: linear;}<br />
+                            #div2 {animation-timing-function: ease;} <br />
+                            #div3 {animation-timing-function: ease-in;} <br />
+                            #div4 {animation-timing-function: ease-out;} <br />
+                            #div5 {animation-timing-function: ease-in-out;} <br />
+                            #div6 {animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);} <br />
+                            <br /><br /><br />
+
+                            @keyframes myAnimation { <br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;from {left: 50px;} <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;to {left: 530px;} <br /><br />
                             }
                         </span>
-                    </td>
-                </tr>
-            </table>
-        </div>
+                    </div>
+                </td>
+                <td class="ejemplo_circulo">
+                    <br /><br />
+                    <div class="circulob" id="n_circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="m_circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="i_circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="y_circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="g_circulo"></div>
+                    <br /><br />
+                    <div class="circulob" id="z_circulo"></div>
+                    <br /><br />
+                </td>
+            </tr>
+        </table>
+    </div>
 
-        <div class="apartado" id="fill">
-            <h2>Fill - mode</h2>
-            <table class="tabla_contenido">
-                <tr>
-                    <td>
-                        <p>---EXPLICACION---</p>
-                    </td>
-                    <td rowspan="2"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="IMG/tres_puntos.png" alt="imagen tres puntos en tabla" />
-                    </td>
-                </tr>
-            </table>
-        </div>
+    <!-- Final de los apartados -->
 
-        <div class="apartado" id="iteration">
-            <h2>Iteration - count</h2>
-            <table class="tabla_contenido" align="center">
-                <tr>
-                    <td>
-                        <p class="explicacion">
-                            Esta propiedad especifica el número de veces que se va a repetir la animación. Puede tomar como valor un número específico de veces o infinite (infinito número de veces).
-                        </p>
-                        <br />
-                        <div class="codigo" id="excepcion">
-                            <span class="code">
-                                div { <br /><br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation; <br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s; <br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: infinite; <br /><br />
-                                }
-                            </span>
-                            <br /> <br /><br />
-                            <span class="code" >
-                                @keyframes myAnimation { <br /><br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:100px; top:100px;} <br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;25%  {background-color:yellow; left:480px; top:100px;} <br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:blue; left:480px; top:350px;} <br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;75%  {background-color:green; left:100px; top:350px;} <br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:red; left:100px; top:100px;} <br /><br />
-                                }
-                            </span>
-                        </div>
-                    </td>
-                    <td class="ejemplo_circulo">
-                        <div id="e_circulo"></div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+    <footer>
+        <p>&copy; Creado por Guillermo Líndez y Anastasia Hristea para Lenguaje de Marcas, curso DAW - Arcipreste de
+            Hita en curso 25/26. No autorizada su reproducción o modificación sin consentimiento expreso.</p>
+    </footer>
+</body>
 
-        <div class="apartado" id="timing">
-            <h2>Timing - function</h2>
-            <table class="tabla_contenido">
-                <tr>
-                    <td>
-                        <p>---EXPLICACION---</p>
-                    </td>
-                    <td rowspan="2"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="IMG/tres_puntos.png" alt="imagen tres puntos en tabla" />
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Final de los apartados -->
-
-        <footer>
-            <p>&copy; Creado por Guillermo Líndez y Anastasia Hristea para Lenguaje de Marcas, curso DAW - Arcipreste de Hita en curso 25/26. No autorizada su reproducción o modificación sin consentimiento expreso.</p>
-        </footer>
-    </body>
 </html>

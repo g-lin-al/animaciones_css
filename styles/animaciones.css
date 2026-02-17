@@ -331,3 +331,34 @@ header p {
   75%  {background-color:green; left:100px; top:350px;}
   100% {background-color:red; left:100px; top:100px;}
 }
+
+footer {
+    position: relative;
+    top: 100px;
+}
+
+.circulob {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 50px;
+
+    animation-name: MyAnimation10;
+    animation-duration: 5s;
+}
+
+#n_circulo {animation-timing-function: linear; background-color: red;}
+#m_circulo {animation-timing-function: ease; background-color: orange;}
+#i_circulo{animation-timing-function: ease-in; background-color: yellow;}
+#y_circulo{animation-timing-function: ease-out; background-color: rgb(64, 219, 25);}
+#g_circulo {animation-timing-function: ease-in-out;background-color: blue;}
+#z_circulo {animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); background-color: pink;}
+
+@keyframes MyAnimation10 {
+
+    from {left: 50px;}
+    to {left: 530px;}
+
+}
