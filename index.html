@@ -150,51 +150,56 @@
 
         <div class="apartado" id="direction">
             <h2>Direction</h2>
-            <table class="tabla_contenido">
+            <table class="tabla_contenido" align="center">
                 <tr>
                     <td>
-                        <p>
-                            Esta propiedad permite cambiar el orden en el que se va a ejecutar la animación. Puede ser normal, al revers o alternada. Para indicarlo usamos las siguientes propiedades: normal (sin cambios), reverse (al revers), alternate (primero normal y después al revers) y alternate-reverse (primero al revers y después normal).
+                        <p class="explicacion">
+                            Esta propiedad permite cambiar el orden en el que se va a ejecutar la animación. Puede ser normal, al revers o alternada. Para indicarlo usamos las siguientes propiedades: normal (sin cambios), reverse (al revers), alternate (primero normal y después al revers) y alternate-reverse (primero al revers y después normal). Además, para ejecutar el alternate y alternate-reverse, hay que añadir la propiedad animation-iteration-count e indicar que se va a repetir 2 veces. 
                         </p>
+                        <br />
+                        <div class="codigo" id="excepcion">
+                            <span class="code">
+                                @keyframes myAnimation {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:200px;}<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:400px;}<br />
+                                }
+                            </span>
+                            <div class="circulo" id="a_circulo"></div>
+                            <br /><br />
+                            <div class="circulo" id="b_circulo"></div>
+                            <br /><br />
+                            <div class="circulo" id="c_circulo"></div>
+                            <br /><br />
+                            <div class="circulo" id="d_circulo"></div>
+                            <br /><br /><br />
+                        </div>
                     </td>
-                    <td rowspan="2">
+                    <td class="codigo" colspan="2">
                         <span class="code">
                             div {<br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation2;<br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: normal;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: normal;<br /><br />
                             }<br /><br />
                             div {<br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation3;<br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: reverse;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: reverse;<br /><br />
                             }<br /><br />
                             div {<br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation4;<br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: alternate;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: 2;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: alternate;<br /><br />
                             }<br /><br />
                             div {<br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-name: myAnimation5;<br /><br />
                             &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br /><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: alternate-reverse;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: 2;<br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-direction: alternate-reverse;<br /><br />
                             }
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="code">
-                            @keyframes myAnimation {<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;0%   {background-color:red; left:0px;}<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;50%  {background-color:yellow; left:200px;}<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;100% {background-color:green; left:0px;}<br />
-                            }
-                        </span>
-                        <div class="circulo"></div>
-                        <div class="circulo"></div>
-                        <div class="circulo"></div>
-                        <div class="circulo"></div>
                     </td>
                 </tr>
             </table>
@@ -235,7 +240,7 @@
         </div>
 
         <div class="apartado" id="timing">
-            <h2>Timing function</h2>
+            <h2>Timing - function</h2>
             <table class="tabla_contenido">
                 <tr>
                     <td>
