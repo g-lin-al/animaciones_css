@@ -48,23 +48,23 @@
             <tr>
                 <td class="explicacion">
                     <p>
-                        Lo primero que hay que hacer para crear una animaci&oacute;n en css, es elegir el elemento div al que
-                        quieres aplicarle la animaci&oacute;n y ponerle dos atributos clave: animation-name y
-                        animation-duration.
+                        Lo primero que hay que hacer para crear una animaci&oacute;n en CSS, es elegir el elemento <span class="decor_code">div</span> al que
+                        quieres aplicarle la animaci&oacute;n y ponerle dos atributos clave: <span class="decor_code">animation-name</span> y
+                        <span class="decor_code">animation-duration</span>.
                     </p>
                     <p>
-                        En animation-name te puedes inventar cualquier nombre que te guste para la animaci&oacute;n y en
-                        animation-duration vas a indicar cu&aacute;nto va a durar la animaci&oacute;n. Por defecto, est&aacute; propiedad
+                        En <span class="decor_code">animation-name</span> te puedes inventar cualquier nombre que te guste para la animaci&oacute;n y en
+                        <span class="decor_code">animation-duration</span> vas a indicar cu&aacute;nto va a durar la animaci&oacute;n. Por defecto, est&aacute; propiedad
                         est&aacute; en 0, por tanto, si no se especifica una duraci&oacute;n no se va a ejecutar.
                     </p>
                     <p>
-                        Ahora, para definir la animaci&oacute;n utilizamos la etiqueta @keyframes, seguida del nombre de la
-                        animaci&oacute;n que hemos definido arriba y dentro de las llaves {} podemos definir el cambio que se
+                        Ahora, para definir la animaci&oacute;n utilizamos la etiqueta <span class="decor_code">@keyframes</span>, seguida del nombre de la
+                        animaci&oacute;n que hemos definido arriba y dentro de las llaves <span class="decor_code">{}</span> podemos definir el cambio que se
                         va a realizar de dos maneras.
                     </p>
                     <p>
-                        La primera forma de hacerlo es poner el atributo from seguido de la propiedad inicial que tiene
-                        el elemento, y el atributo to seguido de la misma propiedad cambiada.
+                        La primera forma de hacerlo es poner el atributo <span class="decor_code">from</span> seguido de la propiedad inicial que tiene
+                        el elemento, y el atributo <span class="decor_code">to</span> seguido de la misma propiedad cambiada.
                     </p>
                 </td>
                 <td class="codigo">
@@ -108,7 +108,7 @@
                     </span>
                 </td>
                 <td class="ejemplo_circulo">
-                    <span class="code" id="primera_expl">Este circulo va a canbiar su color de rojo a amarillo y por
+                    <span class="code" id="primera_expl">Este circulo va a cambiar su color de rojo a amarillo y por
                         &oacute;ltimo a verde.</span>
                     <div class="circulo" id="segundo_circulo"></div>
                 </td>
@@ -168,10 +168,9 @@
                 <td>
                     <p class="explicacion">
                         Esta propiedad permite cambiar el orden en el que se va a ejecutar la animaci&oacute;n. Puede ser
-                        normal, al revers o alternada. Para indicarlo usamos las siguientes propiedades: normal (sin
-                        cambios), reverse (al revers), alternate (primero normal y despu&eacute;s al revers) y
-                        alternate-reverse (primero al revers y despu&eacute;s normal). Adem&aacute;s, para ejecutar el alternate y
-                        alternate-reverse, hay que a&ntilde;adir la propiedad animation-iteration-count e indicar que se va a
+                        normal, al revers o alternada. Para indicarlo usamos las siguientes propiedades: <span class="decor_code">normal</span> (sin
+                        cambios), <span class="decor_code">reverse</span> (al revers), <span class="decor_code">alternate</span> (primero normal y despu&eacute;s al revers) y <span class="decor_code">alternate-reverse</span> (primero al revers y despu&eacute;s normal). Adem&aacute;s, para ejecutar el <span class="decor_code">alternate</span> y
+                        <span class="decor_code">alternate-reverse</span>, hay que a&ntilde;adir la propiedad <span class="decor_code">animation-iteration-count</span> e indicar que se va a
                         repetir 2 veces.
                     </p>
                     <br />
@@ -232,7 +231,7 @@
                         Esta propiedad especifica un estilo para el elemento seleccionado cuando la animaci&oacute;n no se est&aacute; ejecutando: antes de comenzar, despu&eacute;s de terminar o ambas opciones al mismo tiempo. Puesto que las animaciones en CSS no afectan al elemento antes del primer fotograma animado, o despu&eacute;s del &oacute;ltimo, esta propiedad permite sobreescribir este comportamiento. 
                     </p>
                     <p class="explicacion">
-                        Los valores de esta propiedad son : none (la animaci&oacute;n no aplicar&aacute; ning&oacute;n estilo al elemento antes o despu&eacute;s de su ejecuci&oacute;n),  forwards (el elemento retendr&aacute; los valores de estilo fijados por el &oacute;ltimo fotograma), backwards (el elemento retendr&aacute; en este caso los valores del primer fotograma), both (la animaci&oacute;n seguir&aacute; las reglas de forwards y de backwards, extendiendo las propiedades fijadas en ambas direcciones), initial (reestablece la propiedad a sus valores por defecto) y inherit (hereda las propiedades del elemento padre del HTML).
+                        Los valores de esta propiedad son : <span class="decor_code">none</span> (la animaci&oacute;n no aplicar&aacute; ning&oacute;n estilo al elemento antes o despu&eacute;s de su ejecuci&oacute;n),  <span class="decor_code">forwards</span> (el elemento retendr&aacute; los valores de estilo fijados por el &oacute;ltimo fotograma), <span class="decor_code">backwards</span> (el elemento retendr&aacute; en este caso los valores del primer fotograma), <span class="decor_code">both</span> (la animaci&oacute;n seguir&aacute; las reglas de forwards y de backwards, extendiendo las propiedades fijadas en ambas direcciones), <span class="decor_code">initial</span> (reestablece la propiedad a sus valores por defecto) y <span class="decor_code">inherit</span> (hereda las propiedades del elemento padre del HTML).
                     </p>
                     <br />
                     <div class="codigo" id="excepcion">
@@ -284,7 +283,7 @@
                 <td>
                     <p class="explicacion">
                         Esta propiedad especifica el n&oacute;mero de veces que se va a repetir la animaci&oacute;n. Puede tomar como
-                        valor un n&oacute;mero espec&iacute;fico de veces o infinite (infinito n&oacute;mero de veces).
+                        valor un n&oacute;mero espec&iacute;fico de veces o <span class="decor_code">infinite</span> (infinito n&oacute;mero de veces).
                     </p>
                     <br />
                     <div class="codigo" id="excepcion">
@@ -320,11 +319,11 @@
             <tr>
                 <td>
                     <p class="explicacion">
-                        Otra funci&oacute;n es animation-timing-function que especifica la velocidad de la animaci&oacute;n en varios
+                        Otra funci&oacute;n es <span class="decor_code">animation-timing-function</span> que especifica la velocidad de la animaci&oacute;n en varios
                         tramites, es decir, en una especie de curva de velocidad. Para definir los tramites tenemos
-                        varias opciones: ease (comienzo y final m&aacute;s lento que el recorrido), linear (la misma velocidad
-                        en todo el recorrido), ease-in (comienzo m&aacute;s lento), ease-out (final m&aacute;s lento), ease-in-out
-                        (comienzo y final m&aacute;s lentos) y cubic-bezier(n,n,n,n) (estableces los valores que quieres).
+                        varias opciones: <span class="decor_code">ease</span> (comienzo y final m&aacute;s lento que el recorrido), <span class="decor_code">linear</span> (la misma velocidad
+                        en todo el recorrido), <span class="decor_code">ease-in</span> (comienzo m&aacute;s lento), <span class="decor_code">ease-out</span> (final m&aacute;s lento), <span class="decor_code">ease-in-out</span>
+                        (comienzo y final m&aacute;s lentos) y <span class="decor_code">cubic-bezier(n,n,n,n)</span> (estableces los valores que quieres).
                     </p>
                     <br />
                     <div class="codigo" id="excepcion">

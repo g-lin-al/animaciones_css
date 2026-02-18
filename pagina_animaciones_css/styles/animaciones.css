@@ -75,6 +75,7 @@ header p {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.684);
 }
 
 /*.degradado {
@@ -378,3 +379,18 @@ footer p {
 #____circulo {animation-fill-mode: both; background-color: rgb(64, 219, 25);}
 #_____circulo {animation-fill-mode: initial; background-color: blue;}
 #______circulo {animation-fill-mode: inherit; background-color: rgb(250, 126, 147);}
+
+a:hover {
+    color: rgb(255, 200, 0);
+}
+
+.indice a:hover {
+    color: rgb(255, 121, 76);
+    font-size: 16px;
+}
+
+.decor_code {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 190, 60);
+    padding: 4px;
+}
