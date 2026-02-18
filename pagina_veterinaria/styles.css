@@ -6,6 +6,7 @@ body {
     background-color: #E4F1FD;
     background-image: url("IMG_veterinaria/imagen_fondo_patitas.png");
     background-repeat: repeat;
+    overflow-x: hidden;
 }
 
 a {
@@ -171,4 +172,58 @@ h3 {
     position: relative;
     left: 16px;
     top: -10px;
+}
+
+#tercera_pagina {
+    position: relative;
+    top: 250px;
+    text-align: center;
+}
+
+form {
+    text-align: left;
+    position: relative;
+    left: 350px;
+}
+
+.decoration_input {
+    padding-left: 25px;
+    width: 750px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #E1EDF9;
+    border: solid 2px #647A90;
+}
+
+footer {
+    height: 50px;
+    background-color: black;
+    position: relative;
+    top: 350px;
+}
+
+#mascota {
+    width: 780px;
+    height: 65px;
+}
+#reset {
+    padding: 10px 40px;
+    background-color: transparent;
+    border: #1100CC 3px solid;
+    color: #1100CC;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    left: 400px;
+}
+
+#submit {
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 3px solid #FF0D86;
+    color: #FF0D86;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    left: 440px;
 }

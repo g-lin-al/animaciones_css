@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="spanish">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +10,10 @@
     <meta name="generator" content="VSC" />
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <nav>
-        <img src="IMG_veterinaria/logo.svg" alt="icono"  class="logo"/>
+        <img src="IMG_veterinaria/logo.svg" alt="icono" class="logo" />
         <a href="#primera_pagina">Inicio</a>
         <a href="#segunda_pagina">Nuestros animales</a>
         <a href="#tercera_pagina">Inf&oacute;rmate</a>
@@ -20,8 +22,11 @@
 
     <article id="primera_pagina">
         <h1>Donde cada latido importa</h1>
-        <p>En Huella Viva ofrecemos atención veterinaria integral para mascotas, combinando profesionalidad, cercanía y amor por los animales. </p>
-        <p>Nuestro equipo trabaja con dedicación para garantizar el bienestar y la salud de perros, gatos y otras mascotas, utilizando instalaciones modernas y un trato personalizado tanto para los animales como para sus familias.</p>
+        <p>En Huella Viva ofrecemos atención veterinaria integral para mascotas, combinando profesionalidad, cercanía y
+            amor por los animales. </p>
+        <p>Nuestro equipo trabaja con dedicación para garantizar el bienestar y la salud de perros, gatos y otras
+            mascotas, utilizando instalaciones modernas y un trato personalizado tanto para los animales como para sus
+            familias.</p>
     </article>
 
     <main id="segunda_pagina">
@@ -48,29 +53,32 @@
                 <img src="IMG_veterinaria/jirafa.png" alt="jiirafa" />
             </div>
         </article>
-
-        <article id="tercera_pagina">
-            <form action="">
-                <h2>Infórmate</h2>
-                Rellena el formulario y nos pondremos en contacto contigo para una comunicación más cercana.<br />
-                <b>Nombre</b><br />
-                <input type="text" name="texto" placeholder="Usuario" /><br />
-                <b>Correo electrónico</b><br />
-                <input type="text" name="texto" placeholder="usuario@gmail.com" /><br />
-                <b>Tipo de mascota</b><br />
-                <select name="mascota">
-                    <option value="" selected="selected" disabled="disabled">Lista de animales disponibles</option>
-                    <option value="0">Perro</option>
-                    <option value="1">Tortuga</option>
-                    <option value="2">Pájaro</option>
-                    <option value="3">Gato</option>
-                    <option value="4">Jirafa</option>
-                </select><br />
-                <input name="privacidad" type="checkbox" checked="checked" />Aceptas nuestros términos de privacidad.<br />
-                <input type="reset" value="Volver a rellenar" />
-                <input type="submit" value="Enviar" />
-            </form>
-        </article>
     </main>
+    <article id="tercera_pagina">
+        <h2>Infórmate</h2>
+        <form action="">
+            Rellena el formulario y nos pondremos en contacto contigo para una comunicación más cercana.<br /><br />
+            <b>Nombre</b><br /><br />
+            <input type="text" name="texto" placeholder="Usuario" class="decoration_input" /><br /><br />
+            <b>Correo electrónico</b><br /><br />
+            <input type="text" name="texto" placeholder="usuario@gmail.com" class="decoration_input" /><br /><br />
+            <b>Tipo de mascota</b><br /><br />
+            <select name="mascota" class="decoration_input" id="mascota" >
+                <option value="" selected="selected" disabled="disabled">Lista de mascotas disponibles </option>
+                <option value="0">Perro</option>
+                <option value="1">Tortuga</option>
+                <option value="2">Pájaro</option>
+                <option value="3">Gato</option>
+                <option value="4">Jirafa</option>
+            </select><br /><br />
+            <input name="privacidad" type="checkbox" checked="checked" /> Aceptas nuestros términos de privacidad.<br /><br />
+            <input type="reset" value="Volver a rellenar" id="reset"/>
+            <input type="submit" value="Enviar" id="submit"/>
+        </form>
+    </article>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
