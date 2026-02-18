@@ -17,6 +17,7 @@
         <a href="">Inf&oacute;rmate</a>
         <button id="llamar">Llámanos</button>
     </nav>
+
     <article id="primera_pagina">
         <h1>Donde cada latido importa</h1>
         <p>En Huella Viva ofrecemos atención veterinaria integral para mascotas, combinando profesionalidad, cercanía y amor por los animales. </p>
@@ -25,6 +26,46 @@
 
     <main id="segunda_pagina">
         <h2>Nuestros animales</h2>
+        <article>
+            <div id="perros">
+                <h3>Perros</h3>
+            </div>
+            <div id="tortugas">
+                <h3>Tortugas</h3>
+            </div>
+            <div id="pajaros">
+                <h3>Pájaros</h3>
+            </div>
+            <div id="gatos">
+                <h3>Gatos</h3>
+            </div>
+            <div id="jirafas">
+                <h3>Jirafas</h3>
+            </div>
+        </article>
+
+        <article>
+            <form action="">
+                <h2>Infórmate</h2>
+                Rellena el formulario y nos pondremos en contacto contigo para una comunicación más cercana.<br />
+                <b>Nombre</b><br />
+                <input type="text" name="texto" placeholder="Usuario" /><br />
+                <b>Correo electrónico</b><br />
+                <input type="text" name="texto" placeholder="usuario@gmail.com" /><br />
+                <b>Tipo de mascota</b><br />
+                <select name="mascota">
+                    <option value="" selected="selected" disabled="disabled">Lista de animales disponibles</option>
+                    <option value="0">Perro</option>
+                    <option value="1">Tortuga</option>
+                    <option value="2">Pájaro</option>
+                    <option value="3">Gato</option>
+                    <option value="4">Jirafa</option>
+                </select><br />
+                <input name="privacidad" type="checkbox" checked="checked" />Aceptas nuestros términos de privacidad.<br />
+                <input type="reset" value="Volver a rellenar" />
+                <input type="submit" value="Enviar" />
+            </form>
+        </article>
     </main>
 </body>
 </html>
