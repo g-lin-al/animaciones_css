@@ -1,0 +1,174 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #E4F1FD;
+    background-image: url("IMG_veterinaria/imagen_fondo_patitas.png");
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+
+    padding-right: 70px;
+    position: relative;
+    left: 480px;
+    top: 40px;
+}
+
+.logo {
+    width: 30px;
+    height: 33px;
+    position: absolute;
+    left: 65px;
+    top: 40px;
+}
+
+#llamar{
+    position: absolute;
+    top: 40px;
+    left: auto;
+    right: 70px;
+
+    background-color: transparent;
+    border: solid 3px #FF0D86;
+    color: #FF0D86;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+
+#primera_pagina {
+    color: white;
+    padding: 92px 96px 168px;
+    background-color: #1100CC;
+    border-radius: 40px;
+    width: 60%;
+    
+    text-align: center;
+    
+    position: relative;
+    top: 100px;
+    left: 180px;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+#primera_pagina p {
+    color: rgba(255, 255, 255, 0.693);
+    font-size: 16px;
+    width: 540px;
+    position: relative;
+    left: 20%;
+}
+
+#segunda_pagina {
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#perros {
+    width: 480px;
+    height: 370px;
+    background-color: #FFBF00;
+    border-radius: 30px;
+}
+
+h3 {
+    color: white;
+    font-size: 28px;
+    position: relative;
+    top: 32px;
+    left: 40px;
+}
+
+#perros img {
+    position: relative;
+    left: 110px;
+    top: -60px;
+}
+
+#tortugas {
+    width: 480px;
+    height: 153px;
+    background-color: #ff0000;
+    border-radius: 30px;
+    overflow: hidden;
+
+    position: relative;
+    top: 20px;
+}
+
+#tortugas img {
+    position: relative;
+    left: 220px;
+    top: -85px;
+}
+
+#pajaros {
+    width: 385px;
+    height: 153px;
+    background-color: #FF57AB;
+    border-radius: 30px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 79px;
+    left: 500px;
+}
+
+#pajaros img {
+    position: relative;
+    left: 192px;
+    top: -85px;
+}
+
+#gatos {
+    width: 380px;
+    height: 370px;
+    background-color: #1400EE;
+    border-radius: 30px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+
+#gatos img {
+    position: relative;
+    left: 10px;
+    top: -65px;
+}
+
+#jirafas {
+    width: 280px;
+    height: 543px;
+    background-color: #1DEF2B;
+    border-radius: 30px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 79px;
+    left: 900px;
+}
+
+#jirafas img {
+    position: relative;
+    left: 16px;
+    top: -10px;
+}
